@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>Home </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="Style/image_puzzle.css"/>
+		
+			
+	</head>
+	<body>
+		<div class="main_conatiner">
+			<div class="top">	<h1 class="top_heading">Image Puzzle</h1></div>
+			<div class="sub_main_conatiner">
+				<div class="container" id="container1">
+					<div class="box">
+
+						<div class="sub_box">
+						<h2 class="sub_box_heading">Select Time :</h2>
+							<select class="time_select" id="selected">
+								<option class="time_select_option"  value="" selected="selected" disabled>Select time within you can complete the game.</option>
+								<option class="time_select_option"  value="2" >2 minutes</option>
+								<option  class="time_select_option"  value="4">4 minutes</option>
+								<option  class="time_select_option"  value="6">6 minutes</option>
+								<option  class="time_select_option"  value="8">8 minutes</option>
+								<option  class="time_select_option"  value="10">10 minutes</option>
+							</select>
+						</div>
+						<div class="sub_box">
+							<h2 class="sub_box_heading">Select Level :</h2>
+							<form action="#" class="radio_btn_container">
+								
+								<input type="radio" class="radio_btn" id="radio_1" name="level" value="3" checked="ckecked">
+								<label for="radio_1" id="radio_label1" class="radio_label" >Very Easy</label>
+								
+								<input type="radio" class="radio_btn" id="radio_2" name="level" value="4">
+								<label for="radio_2" id="radio_label2" class="radio_label">Easy</label>
+								
+								<input type="radio" class="radio_btn" id="radio_3" name="level" value="5">
+								<label for="radio_3" id="radio_label3" class="radio_label">Hard</label>
+								
+								<input type="radio" class="radio_btn" id="radio_4" name="level" value="6">
+								<label for="radio_4" id="radio_label4" class="radio_label">Very Hard</label>
+							</form>
+						
+						</div>
+						
+						<div class="sub_box" id="game_btn_container">
+							<button type="button" onclick="start()" id="start_btn" class="game_btn">Start</button>
+						</div>
+						
+					</div>
+				</div>
+				<div class="container" id="container2">
+					<div class="box" id="container2_box_4">
+						<div class="sub_box" id="game_btn_container_4">
+							<button type="button" onclick="back()" id="back_btn2" class="game_btn">back</button>
+							<button type="button" onclick="finish()" id="finish_btn2" class="game_btn">Finish</button>
+						</div>
+					</div>
+					<div class="box" id="container2_box_1">
+						<ul id="sortlist">
+						
+						</ul>
+					</div>
+					<div class="box" id="container2_box_2">
+						 
+							<div class="hint_image_container">
+								<img src="" class="hint_image" id="hint_image_id">
+							</div>
+						 
+						<div class="sub_box" id="game_btn_container_2">
+							<p class="finish_time" id="finish_time_id"><span id="minute_1">0</span><span  id="minute_2">0</span> : <span  id="second_1">0</span><span  id="second_2">0</span></p>
+							<button type="button" onclick="back()" id="back_btn" class="game_btn">back</button>
+						</div>
+						<div class="sub_box" id="game_btn_container_3">
+						<button type="button" onclick="finish()" id="finish_btn" class="game_btn">Finish</button>
+						</div>
+						
+					</div>
+					
+					<div class="box" id="container2_box_3">
+						<p class="finish_result" id="finish_result_1">You win the game.</p>
+						<p class="finish_result" id="finish_result_2">You lose the game.</p>
+						<div class="sub_box" id="game_btn_container">
+							<button type="button" onclick="next1()" id="next1" class="game_btn">Next</button>
+							<button type="button" onclick="next2()" id="next2" class="game_btn">Next</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer" id="footer_1">
+					<span class="sub_footer">@copywrite</span>
+					<span class="sub_footer">Developed by:- Mukesh Kumar</span>
+					 
+				</div>
+				<div class="footer" id="footer_2">
+					
+					<span class="sub_footer" id="sub_footer_3">Contact  :- </span>
+					<span class="sub_footer">Phone number:-  6005819576 </span>
+					<span class="sub_footer">Email :-  thappamkkumar@gmail.com </span>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/image_puzzle.js"></script>
+		<script src="js/sort_list.js"></script> 	
+		<script>
+			
+		</script>
+	</body>
+</html>
