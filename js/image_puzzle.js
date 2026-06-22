@@ -21,7 +21,7 @@ function getImage()
 	var img_arr=["image1.jpeg", "image11.jpg", "image12.jpg", "image13.jpg", "image15.jpg","image16.jpg", "image3.jpeg","image5.jpg","image6.jpg","image8.jpg","image9.jpg"];
 	var arr_length=img_arr.length;
 	var img_name=img_arr[Math.floor(Math.random() * arr_length)];
-	var img_url="Images/"+img_name;
+	var img_url="images/"+img_name;
 	return img_url;
 }
 
